@@ -8,23 +8,23 @@ const fs = require('fs');
 const debug = false;
 const debug_data = [];
 
-const course_urls = ['YOUR_COURSE_URLs_HERE', 'YOUR_COURSE_URLs_HERE'];
+const course_urls = ['https://www.domestika.org/it/courses/1168-racconti-illustrati-dall-idea-alla-carta/units/6248-introduzione', 'https://www.domestika.org/it/courses/1168-racconti-illustrati-dall-idea-alla-carta/units/6248-introduzione'];
 
-const subtitle_lang = 'en';
+const subtitle_lang = 'it';
 //Specifiy your OS either as 'win' for Windows machines or 'mac' for MacOS/Linux machines
-const machine_os = 'YOUR_OS_HERE';
+const machine_os = 'mac';
 
 //Cookie used to retreive video information
 const cookies = [
     {
         name: '_domestika_session',
-        value: 'YOUR_COOKIE_HERE',
+        value: 'kcRkPV%2B%2BIBuKb3O%2BLa7G5W2y0DOjlvKe%2FbNfArufgYFvl%2Fdz%2BUpafSk8%2FsJI9hSeTA%2B%2FH02NzLz4oevRKjN56awfQZ%2FAQpWLStjHixl59ClYb5rvw9fNNCBAwJkMyx5axVwzpzD6lYuew3BSfYmfUAJlWp%2FnjUoMR%2BDWp7Tp5QaSXREzyjkU5LLJUbH4%2BZuvzLmEE1a%2B8%2BqAcilkX0egn6Lf8Tv3X7BAVtiH%2Fm7krWKeWGBPQijQhNRGMEXL1XdHPvpUp6LIO9EZ%2B0gadosy2Hc3pb0nYfhL%2Bl2VaUJlMFaQmRSKfwjxL6LnrR8cjyAyzOCnD%2BfJsUYrOJ37zpo%2FRY8EuQjvKItHTPQ9%2ByfE1DVUMpNa9TnJMA%2F%2Bv7fi9gF%2FarB2RiSGth%2BTxZJrPkqLx6b2L9DbXuDaFJ0xUAb%2F4v4c4YgQfkqyqu%2FMmzO33IrokCMt4oTL8owI%2BOrNgZeXemVSYKBwRISOGa%2FT0qZf70%2BF%2FMI%2FGfpbFUd6FoOtCmbdJ3OIyxOBeykP8KK%2BV5SaZen3gJxnLXysJVYGsL47xiGBT%2FUorcuy5qqlnTLq0MJYEkh4JhzqhRw2kg%3D%3D--4421I%2BXVOvWsT98I--f04WCMsqEly9Vj%2FFbGmI3g%3D%3D',
         domain: 'www.domestika.org',
     },
 ];
 
 //Credentials needed for the access token to get the final project
-const _credentials_ = 'YOUR_CREDENTIALS_HERE';
+const _credentials_ = '{%22accessToken%22:%22ZIzaFG-hXLvM2kP9oPJKWNKrpcHVMCvsewdH6_iENxY%22%2C%22refreshToken%22:%22RH9W0pUge5zw63RfnKHj0-aN2VwshJop5mhYh6hTjN4%22%2C%22isEmpty%22:false}';
 // --- END CONFIGURATION ---
 
 //Check if the N_m3u8DL-RE binary exists, throw error if not
